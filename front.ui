@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Portfel inwestycyjny</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>471</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Wybierz plik</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>ścieżka do pliku</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>891</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Tab 1</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="maximumSize">
+            <size>
+             <width>861</width>
+             <height>428</height>
+            </size>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>210</number>
+           </attribute>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>Data notowania</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Kurs spółki</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Jednodniowe stopy zwrotu</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Odchylenie standardowe</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
+        <widget class="QTableWidget" name="tableWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>861</width>
+           <height>428</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>861</width>
+           <height>428</height>
+          </size>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>210</number>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Data notowania</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Kurs spółki</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Jednodniowe stopy zwrotu</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Odchylenie standardowe</string>
+          </property>
+         </column>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>590</y>
+      <width>291</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item alignment="Qt::AlignRight">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Oczekiwana stopa zwrotu</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignRight">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Odchylenie standardowe stopy zwrotu</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignRight">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Wariancja stopy zwrotu</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>590</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>590</y>
+      <width>391</width>
+      <height>194</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QTableWidget" name="tableWidget_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Spółka</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Udziały spółki</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>10</y>
+      <width>331</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Wprowadź stosunek kryterium ryzyka do kryterium zysku</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_8">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>60</y>
+      <width>137</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>40</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Oblicz</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>710</y>
+      <width>135</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Współczynnik korelacji</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>720</y>
+      <width>189</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>730</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wartość funkcji metakryterium</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_7">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>750</y>
+      <width>189</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1013</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTest"/>
+   <addaction name="menuTest"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="accessibleDescription">
+    <string/>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
