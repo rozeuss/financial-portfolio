@@ -41,7 +41,9 @@ def step_4(x1, x2, aR_dash, bR_dash, s1, s2):
     return p
 
 
-# Główna funkcja
+# Główna funkcja - A i B to dwie tablice o równej ilości elementów,
+# a ratio to stosunek pomiędzy zyskiem a ryzykiem (np. 1/3 - czyli zysk ma wagę 1/3, a ryzyko 2/3)
+# oczywiscie ratio musi być z przediału (0, 1) :)
 def calculate(A, B, ratio):
 
 
