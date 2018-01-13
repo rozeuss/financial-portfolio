@@ -145,19 +145,16 @@ def calculate(A, B, ratio):
     f_metakryt = -sol.fun
 
 
-
-    # Printy dla sprawdzenia poprawności - usunąć w gotowej aplikacji :)
-    print('K1min: ' + str(K1min))
-    print('K1max: ' + str(K1max))
-    print('K2min: ' + str(K2min))
-    print('K2max: ' + str(K2max))
-    print('Metakryt: ' + str(f_metakryt))
-    print('Podział spółek: ' + str(sol.x))
+    # print('K1min: ' + str(K1min))
+    # print('K1max: ' + str(K1max))
+    # print('K2min: ' + str(K2min))
+    # print('K2max: ' + str(K2max))
+    # print('Metakryt: ' + str(f_metakryt))
+    # print('Podział spółek: ' + str(sol.x))
 
     return [-sol.fun, sol.x[0], sol.x[1]]
 
 
-# Przykład - usunąć w gotowej aplikacji :)
 def example():
     A = np.array([28.9, 29, 28.5, 28, 28.5, 28.6, 29.4, 30, 31.8, 34.5,
                   33.9, 33.8, 35.2, 34.4, 32, 32.7, 34.2, 35.8, 35.4, 34.4, 34.4])
